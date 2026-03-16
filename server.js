@@ -87,10 +87,6 @@ const PORT = process.env.PORT || 3000;
     } catch (e) {
         console.error('Admin bootstrap failed:', e);
     }
-
-    app.listen(PORT, () => {
-        console.log(`🚀 Server running in ${process.env.NODE_ENV} mode on port ${PORT}`);
-    });
 })();
 
 
@@ -120,3 +116,4 @@ process.on('unhandledRejection', (err) => {
 });
 
 
+module.exports = app;
